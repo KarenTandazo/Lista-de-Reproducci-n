@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrayFy: Reproductor de música</title>
+    <script src="https://kit.fontawesome.com/805dac0802.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script defer src="src/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CrayFy <i class="fa-brands fa-spotify"></i></h1>
+        <a href="login.html">
+            <i id="icono" class="fa-solid fa-user"></i>
+        </a>
+    </header>
+    <div id="padrereproductor">
+        <div class="primerhijo" id="padrelistas">
+            <section id="buscador">
+                <h2>Buscador</h2>
+                <input id="buscar" type="text" placeholder="Busca por Nombre, Artista o Género">
+                <button id="search"> Buscar</button>
+            </section>
+            <section id="resultados" class="hijolista">
+                <h2>Catálogo / Resultados <i class="fa-solid fa-magnifying-glass"></i></i></h2>
+                <div id="listaResultados" class="cancioneslista">         
+                </div>
+            </section>
+            <section id="listaFavoritos" class="hijolista">
+                <h2>Favoritos <i class="fa-solid fa-heart"></i></h2>
+                <div id="favoritos" class="cancioneslista">
+                </div>
+            </section>
+            <section id="listaMyPlaylist" class="hijolista">
+                <h2>My Playlist <i class="fa-solid fa-headphones"></i></h2>
+                <div id="myPlaylist" class="cancioneslista">
+                </div>
+            </section>
+        </div>
+        <div class="primerhijo" id="cancionActual">
+            <section id="reproductor">
+                <div class="espacio"></div>
+                <div >
+                    <img id="caratula" src="assets/Carátulas/PRINCIPAL.jpg" alt="carátula principal" width="300px">
+                </div>
+                <div id="caracteristicascancion">
+                    <span class="datos">Nombre:</span>
+                    <span class="datos">Artista:</span>
+                    <span class="datos">Año:</span>
+                    <span class="datos">Duración:</span>
+                    <span class="datos">Género:</span>
+                </div>
+                <div id="botones">
+                    <button id="botonPrevious">
+                        <i class="fa-solid fa-backward-step controles"></i>
+                    </button>
+                    <button id="botonPlay" >
+                        <i class="fa-solid fa-play controles"></i>
+                    </button>
+                    <button id="botonPausa">
+                        <i class="fa-solid fa-pause controles"></i>
+                    </button>
+                    <button id="botonNext">
+                        <i class="fa-solid fa-forward-step controles"></i>
+                    </button>
+                    <button id="botonStop">
+                        <i class="fa-solid fa-stop controles"></i>
+                    </button>
+                    <button id="botonMute">
+                        <i class="fa-solid fa-volume-xmark controles"></i>
+                    </button>
+                </div>
+                <div>
+                </div>
+            </section>
+        </div>
+        <span id="nota">*Recuerda que las canciones se agregan 1 sola vez por playlist</span>
+    </div>
+</body>
+</html>
