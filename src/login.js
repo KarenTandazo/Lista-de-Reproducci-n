@@ -29,7 +29,7 @@ loginBtn.addEventListener('click', (event) => {
 
   if (user) {
     localStorage.setItem('isLogged', true)
-    window.location.href = '../index.html'
+    window.location.href = 'index.html'
   }
   else {
     usernameInput.value = ''
@@ -40,13 +40,13 @@ loginBtn.addEventListener('click', (event) => {
 if (localStorage.getItem('isLogged')) {
   const form = document.getElementById('loginForm')
   form.innerHTML = `<button id="logout">Logout</button>
-        <a href="../index.html">
+        <a href="index.html">
         <i class="bi bi-arrow-left"></i> Back
       </a>`
   const logoutBtn = document.getElementById('logout')
   logoutBtn.addEventListener('click', () => {
     localStorage.removeItem('isLogged')
-    window.location.href = '../index.html'
+    window.location.href = 'index.html'
   })
 }
 
